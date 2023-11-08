@@ -1,0 +1,50 @@
+
+<mat-sidenav-container class="container" autosize>
+  <mat-sidenav [opened]="true" mode="side" class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item>
+        <span class="entry">
+          <mat-icon>dashboard</mat-icon>
+          <span class="text " aria-current="page" routerLink="/dashboard">Dashboard</span>
+        </span>
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item>
+        <span class="entry">
+          <mat-icon>person_add</mat-icon>
+          <span class="text" routerLink="/student">Add Student</span>
+        </span>
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item>
+        <span class="entry">
+          <mat-icon>receipt</mat-icon>
+          <span class="text" routerLink="/report">Attendance Report </span>
+        </span>
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item>
+        <span class="entry">
+          <mat-icon>person_add_alt_1</mat-icon>
+          <span class="text" routerLink="/mark-attendance">Mark Attendance</span>
+        </span>
+      </a>
+    </mat-nav-list>
+    <!-- <mat-nav-list>
+      <a mat-list-item>
+        <span class="entry">
+          <mat-icon>settings</mat-icon>
+          <span class="text" routerLink="/settings">Settings</span>
+        </span>
+      </a>
+    </mat-nav-list> -->
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+ 
+  </mat-sidenav-content>
+</mat-sidenav-container>

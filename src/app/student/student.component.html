@@ -1,0 +1,23 @@
+<h1>Add Student Form</h1>
+<div class="container">
+    
+<form [formGroup]="studentForm" (ngSubmit)="submitStudent()" novalidate>
+
+    <mat-form-field>
+        <mat-label>Student Name</mat-label>
+        <input matInput>
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-label>Student Email</mat-label>
+        <input matInput>
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-label>Phone Number</mat-label>
+        <input matInput>
+    </mat-form-field><br>
+    <button mat-button color="primary" type="submit">Submit</button>
+</form>
+
+</div>
+  
+  

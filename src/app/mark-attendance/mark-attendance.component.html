@@ -1,0 +1,30 @@
+<h1>Mark Student's Attendance</h1>
+<div class="container-attendance">
+
+    <mat-form-field>
+        <mat-label>Select Student ID</mat-label>
+        <mat-select disableRipple>
+            <mat-option value="1">1</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select disableRipple>
+            <mat-option value="1">Present</mat-option>
+            <mat-option value="2">Absent</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <button mat-button class="btn" color="primary" type="submit">Submit</button>  
+</div>
